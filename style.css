@@ -1,28 +1,33 @@
+/*  Base Reset  */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/*  Body Styling  */
 body {
   font-family: 'Poppins', sans-serif;
   background-color: #f4f6f8;
   color: #333;
 }
 
+/*  Header Section  */
 .hero {
-  background-color: #87A687;
+  background-color: #1a237e;
   color: white;
   padding: 60px 20px;
   text-align: center;
 }
 
+/*  Main Container  */
 .container {
   max-width: 900px;
   margin: 30px auto;
   padding: 0 20px;
 }
 
+/*  Card Section  */
 .card {
   background-color: #fff;
   border-radius: 10px;
@@ -37,6 +42,7 @@ body {
   font-size: 22px;
 }
 
+/*  Skills Styling  */
 .skills {
   display: flex;
   flex-wrap: wrap;
@@ -52,6 +58,105 @@ body {
   font-size: 14px;
 }
 
+/*  Lists  */
+ul {
+  padding-left: 20px;
+  line-height: 1.6;
+}
+
+/*  Links  */
+a {
+  color: #2196f3;
+  text-decoration: none;
+}
+
+/*  Footer  */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #e0e0e0;
+  color: #555;
+  font-size: 14px;
+}
+
+/*  Toggle Button  */
+.mode-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 8px 14px;
+  background-color: #eeeeee;
+  color: #333;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 500;
+  z-index: 1000;
+}
+
+/*  Dark Mode Styling  */
+body.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+body.dark-mode .hero {
+  background-color: #0d47a1;
+  color: #ffffff;
+}
+
+body.dark-mode .card {
+  background-color: #1e1e1e;
+  color: #e0e0e0;
+  box-shadow: 0 2px 10px rgba(255, 255, 255, 0.05);
+}
+
+body.dark-mode .card h2 {
+  color: #90caf9;
+}
+
+body.dark-mode .skills span {
+  background-color: #263238;
+  color: #90caf9;
+}
+
+body.dark-mode a {
+  color: #64b5f6;
+}
+
+body.dark-mode footer {
+  background-color: #2c2c2c;
+  color: #bbb;
+}
+
+body.dark-mode .mode-toggle {
+  background-color: #424242;
+  color: #fff;
+}
+
+/*  Responsive Design  */
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 26px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  .card h2 {
+    font-size: 20px;
+  }
+
+  .skills span {
+    font-size: 12px;
+    padding: 5px 10px;
+  }
+
+  .container {
+    padding: 0 10px;
+  }
+}
 ul {
   padding-left: 20px;
   line-height: 1.6;
