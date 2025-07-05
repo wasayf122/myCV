@@ -5,20 +5,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Wasayf Alanazi - Portfolio</title>
   <link rel="stylesheet" href="style.css" />
+  <!-- Import custom Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
+
+  <!-- Dark Mode Toggle Button -->
+  <button id="modeToggle" class="mode-toggle">🌙 Dark Mode</button>
+
+  <!-- Header section -->
   <header class="hero">
     <h1>Wasayf Alanazi</h1>
     <p>Computer Science Student | Aspiring Developer</p>
   </header>
 
+  <!-- Main content container -->
   <main class="container">
+
+    <!-- About Me section -->
     <section class="card">
       <h2>About Me</h2>
       <p>A university student approaching graduation, with intermediate experience in programming languages gained through academic coursework and university projects.</p>
     </section>
 
+    <!-- Skills section -->
     <section class="card">
       <h2>Skills</h2>
       <div class="skills">
@@ -30,28 +40,43 @@
       </div>
     </section>
 
+    <!-- Projects section -->
     <section class="card">
       <h2>Projects</h2>
       <ul>
         <li><strong>Online Library Management</strong> – Java-based project managing library records.</li>
-        <li><strong>Mosques Management System</strong> – Python project for managing mosque details, including imam names and mosque location.</li>
+        <li><strong>Mosques Management System</strong> – Python project for managing mosque activities and records.</li>
       </ul>
     </section>
 
+    <!-- Education section -->
     <section class="card">
       <h2>Education</h2>
       <p>Student in Computer Science – Qassim University</p>
     </section>
 
+    <!-- Contact section -->
     <section class="card">
       <h2>Contact</h2>
-      <p>Email: <a href="mailto:wgxx.96@gmail.com">wgxx.96@gmail.com</a></p>
-      <p>Phone: 0567873122</p>
+      <p>Email: <a href="mailto:w.elenezii196@gmail.com">w.elenezii196@gmail.com</a></p>
     </section>
   </main>
 
+  <!-- Footer -->
   <footer>
     <p>&copy; 2025 Wasayf Alanazi</p>
   </footer>
+
+  <!-- JavaScript for Dark Mode Toggle -->
+  <script>
+    const toggleBtn = document.getElementById('modeToggle');
+
+    toggleBtn.addEventListener('click', () => {
+      document.body.classList.toggle('dark-mode');
+      toggleBtn.textContent = document.body.classList.contains('dark-mode') 
+        ? '☀️ ' 
+        : '🌙';
+    });
+  </script>
 </body>
 </html>
